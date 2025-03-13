@@ -6,7 +6,6 @@ print("""
 ==================== POSTO DE COMBUSTIVEL====================   
 A = Álcool 3.79R$
 G = Gasolina 6.59R$
-
 """)
 
 comb = input("Digite o tipo de combustível: ").upper()
@@ -36,5 +35,9 @@ match comb:
         print("Combustível não encontrado")
         exit()
 
-    valor = preco * litros
-    valorfinal = valor - desconto
+valor = preco * litros
+valorfinal = valor - desconto
+print()
+print(f"Valor total a ser pago: R${valorfinal:.2f}")
+print(f"Tipo de combustível: {tipo}")
+print(f"Você abasteceu {litros}L")
